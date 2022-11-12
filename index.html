@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <title>Typing game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="contenedor">
+    <div id="idioma">
+      <h1>Escriba 1 para jugar en castellano o 2 para english</h1>
+      <input type="number" id="select"/>
+      <button type="button" id="idiom">Introducir</button>
+  </div>
+  <div id="ierror">
+      <h2>Elija una de las opciones, por favor.</h2>
+  </div> 
+  <div id="juego">
+    <div>
+    <h1>Juego de tipeo veloz</h1>
+    <p class="item">Practique su tipeo. Haga Click en  **inicio** para empezar</p>
+    <p class="item" id="quote"></p> <!-- En este bloque mostramos el texto de ejemplo -->
+    <p class="item" id="message"></p> <!-- En este bloque mostramos los mensajes del juego -->
+  </div>
+  <div>
+    <input type="text" aria-label="palabra actual" id="texto-tipeado" /> <!-- el componente textbox para ingresar el texto -->
+    <button type="button" id="inicio">Inicio</button> <!-- Botón para iniciar el juego -->
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
